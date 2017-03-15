@@ -17,15 +17,18 @@ def index():
 def say_hello():
     """Say hello"""
 
-    return "" #add code here to greet user
+    return "Konichiwa" #add code here to greet user
 
 @app.route('/lucky')
 def lucky_number():
     """Provides a random lucky number"""
+    lucky_num = randint(1, 777)
+    lucky_message = "Your luck number is %s" % lucky_num
+
     # add code here of getting a lucky number and return a string
     # with the lucky number
 
-    return ""
+    return lucky_message
 
 
 if __name__ == '__main__':
